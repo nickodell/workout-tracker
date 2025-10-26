@@ -385,6 +385,10 @@ The path to POST to is: `/api/v1/import/fitotrack?api-key=${API_KEY}`
 
 ## Development
 
+### Using a Dev Container
+
+This project contains a [pre-built development container](https://containers.dev/guide/prebuild) `ghcr.io/jovandeginste/workout-tracker-dev-container:latest` (see `.devcontainer/devcontainer.json`). Inside the container, just run `make build-server serve`. After building the project when running it, the app port will be exposed automatically and you can access the app locally on your machine via http://localhost:8080/.
+
 ### Build and run it yourself
 
 - install go
