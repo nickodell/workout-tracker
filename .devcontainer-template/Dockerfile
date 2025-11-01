@@ -41,3 +41,9 @@ COPY ./frontend/package*.json /tmp/workout-tracker/npm/
 WORKDIR /tmp/workout-tracker/npm/
 RUN npm ci
 RUN rm -rf /tmp/workout-tracker/npm
+
+# Copy go.mod and download module dependencies so the image has cached deps
+COPY ./go.* /tmp/workout-tracker/go-build/
+WORKDIR /tmp/workout-tracker/go-build/
+USER 1000
+RUN go mod download
