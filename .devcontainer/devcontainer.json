@@ -2,10 +2,10 @@
   "name": "Workout Tracker Dev Container",
   "build": {
     "dockerfile": "../.devcontainer-template/Dockerfile",
-    "context": ".."
-  },
-  "args": {
-    "NODE_VERSION": "24",
-    "GO_VERSION": "1.25.3"
+    "context": "..",
+    "args": {
+      "NODE_VERSION": "24",
+      "GO_VERSION": "1.25.3"
+    }
   }
 }
